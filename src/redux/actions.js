@@ -15,17 +15,18 @@ export function startLoadingPlayers(){
 export function startFilters(position, state, gradyear, throws, sort, players){
     return (dispatch) => {
         let filteredplayers = players;
+        filteredplayers.players = filteredplayers.all;
         if(position!==""){
-            filteredplayers.players = filteredplayers.all.filter(player => player.primary_position===position||player.secondary_position===position)
+            filteredplayers.players = filteredplayers.players.filter(player => player.primary_position===position||player.secondary_position===position)
         }
         if(state!==""){
-            filteredplayers.players = filteredplayers.all.filter(player => player.state===state)
+            filteredplayers.players = filteredplayers.players.filter(player => player.state===state)
         }
         if(gradyear!==""){
-            filteredplayers.players = filteredplayers.all.filter(player => player.grad_year===gradyear)
+            filteredplayers.players = filteredplayers.players.filter(player => player.grad_year===gradyear)
         }
         if(throws!==""){
-            filteredplayers.players = filteredplayers.all.filter(player => player.throws===throws)
+            filteredplayers.players = filteredplayers.players.filter(player => player.throws===throws)
         }
         if(position===""&&state===""&&gradyear===""&&throws===""){
             filteredplayers.players = filteredplayers.all;
