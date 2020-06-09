@@ -1,0 +1,81 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+@import "resets.scss";
+$body-font: 'Oswald', sans-serif;
+$dark: #000;
+$medium: #c2c2c2;
+$light: #e1e1e1;
+
+//DEFAULTS
+img {
+    width:100%;
+}
+.header.bg-dark {
+    background: #000 !important;
+}
+.vis-hide {
+    visibility: hidden;
+}
+body {
+    font-family: $body-font !important;
+    color: #000 !important;
+    font-size: 20px !important;
+    font-weight: 300 !important;
+}
+//SPONSORS
+.sponsors {
+    max-width: 500px;
+    img {
+        max-width: 190px;
+    }
+    img.logo-pastime {
+        max-width: 100px;
+    }
+}
+//KEY
+.key {
+    svg {
+        fill: green;
+    }
+}
+//FORM
+label {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+//PLAYERS
+.players {
+    .titles {
+        font-weight: 500;
+    }
+    .player {
+        font-size: 16px;
+        cursor:pointer;
+
+        &:nth-child(even) {background: $medium}
+        &:nth-child(odd) {background: $light}
+        &:hover {
+            background: $dark; color: #FFF;
+            .player-more-info {
+                border: 1px solid rgba(255, 255, 255, 0.125);
+            } 
+        }
+
+        .player-more-info {
+            background: none;
+            border: 1px solid rgba(0,0,0,.125);
+            .title {
+                font-weight: 500;
+            }
+        }
+    }
+    .player[aria-expanded="true"] {
+        .arrow {
+            transform: rotate(180deg);
+            transform-origin: 50% 50%; /* Chrome, Firefox behaves differently */
+        }
+    }
+    .player-name {
+        font-weight: 500;
+    }
+}
