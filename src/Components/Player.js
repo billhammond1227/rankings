@@ -5,9 +5,9 @@ class Player extends Component {
         return <li className="list-group-item player" data-toggle="collapse" data-target={`#more-info-${this.props.plid}`} aria-expanded="false" aria-controls="collapseExample">
                 <div className="row">
                     <div className="col player-name">{`${this.props.first_name} ${this.props.last_name}`}</div>
-                    <div className="col">{ this.props.primary_position }{this.props.primary_position_velo!==null&&this.props.primary_position_velo!=="" ? ` - ${this.props.primary_position_velo} MPH`:' - N/A'}</div>
-                    <div className="col">{ this.props.secondary_position }{this.props.secondary_position_velo!==null&&this.props.secondary_position_velo!=="" ? ` - ${this.props.secondary_position_velo} MPH`:' - N/A'}</div>
-                    <div className="col">{this.props.exit_velo!==null&&this.props.exit_velo!==null ? `${this.exit_velo} MPH`:'N/A'}</div>
+                    <div className="col">{ this.props.primary_position }{this.props.primary_position_velo!==null&&this.props.primary_position_velo!==""&&this.props.primary_position_velo>0 ? ` - ${this.props.primary_position_velo} MPH`:' - N/A'}</div>
+                    <div className="col">{ this.props.secondary_position }{this.props.secondary_position_velo!==null&&this.props.secondary_position_velo!==""&&this.props.secondary_position_velo>0 ? ` - ${this.props.secondary_position_velo} MPH`:' - N/A'}</div>
+                    <div className="col">{this.props.exit_velo!==null&&this.props.exit_velo!==""&&this.props.exit_velo>0 ? `${this.exit_velo} MPH`:'N/A'}</div>
                     <div className="col">{ this.props.state }</div>
                     <div className="col">{ this.props.grad_year }</div>
                     <div className="col-1">
@@ -32,7 +32,7 @@ class Player extends Component {
                         </div>
                         <div className="col-sm">
                             <p className="title p-0 m-0">NCSA</p>
-                            { this.props.primary_position_video!==null ? <img src={require('../images/thumbnail-video.jpg')} alt="Video" />:''}
+                            { this.props.primary_position_video!==null ? <a href={this.props.primary_position_video} target="_blank"><img src={require('../images/thumbnail-video.jpg')} alt="Video" /></a>:''}
                             { this.props.ncsa!==null&&this.props.ncsa!=="" ? <a href={this.props.ncsa.includes("//") ? this.props.ncsa:`//${this.props.ncsa}`} target="_blank" rel="noopener noreferrer">NCSA Profile</a>:'N/A' }
                         </div>
 
