@@ -34,9 +34,9 @@ export function startFilters(position, state, gradyear, throws, sort, players){
         if(sort!==""){
             console.log(sort);
             if(sort==="name"){ filteredplayers.players.sort((a, b) => (a.last_name > b.last_name) ? 1 : -1) }
-            else if(sort==="primary"){ filteredplayers.players.sort((a, b) => (a.primary_position_velocity > b.primary_position_velocity) ? 1 : -1) }
-            else if(sort==="secondary"){ filteredplayers.players.sort((a, b) => (a.secondary_position_velocity > b.secondary_position_velocity) ? 1 : -1) }
-            else if(sort==="hitting"){ filteredplayers.players.sort((a, b) => (a.exit_velocity > b.exit_velocity) ? 1 : -1) }
+            else if(sort==="primary"){ filteredplayers.players.sort((a, b) => (a.primary_position_velo < b.primary_position_velo) ? 1 : -1) }
+            else if(sort==="secondary"){ filteredplayers.players.sort((a, b) => (a.secondary_position_velo < b.secondary_position_velo) ? 1 : -1) }
+            else if(sort==="hitting"){ filteredplayers.players.sort((a, b) => (a.exit_velo < b.exit_velo) ? 1 : -1) }
             else if(sort==="state"){ filteredplayers.players.sort((a, b) => (a.state > b.state) ? 1 : -1) }
             else if(sort==="gradyear"){ filteredplayers.players.sort((a, b) => (a.grad_year > b.grad_year) ? 1 : -1) }
         }
