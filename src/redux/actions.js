@@ -1,11 +1,11 @@
 import axios from 'axios';
 
-export function startLoadingPlayers(){
+export function startLoadingPlayers(eid){
     return (dispatch) => {
-        return axios.get(`https://pastimetournaments.com/individuals/includes/rankings.php`)
+        return axios.get(`https://pastimetournaments.com/individuals/includes/rankings.php?eid=${eid}&key=4ffc9b0491dbc7e3d87cc172`)
         .then(res => {
             dispatch(loadPlayers(res.data))
-            //console.log(res.data);
+            console.log(res.data);
         }).catch( (error) => {
             console.log(error);
         });

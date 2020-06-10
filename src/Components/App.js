@@ -1,4 +1,4 @@
-import Main from './Main';
+import Switch from './Switch';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as actions from '../redux/actions';
@@ -14,6 +14,6 @@ function mapDispatchtoProps(dispatch){
   return bindActionCreators(actions, dispatch)
 }
 
-const App = withRouter(connect(mapStateToProps, mapDispatchtoProps)(Main))
+const App = withRouter(connect(mapStateToProps, mapDispatchtoProps)(Switch))
 
 export default App;

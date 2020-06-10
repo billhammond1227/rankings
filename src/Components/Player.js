@@ -31,11 +31,14 @@ class Player extends Component {
                             <p>{this.props.team_name!=="" ? this.props.team_name:'N/A'}</p>
                         </div>
                         <div className="col-sm">
+                            <p className="title p-0 m-0">Other Stats</p>
+                            {this.props.notes!==null&&this.props.notes!=="" ? <p dangerouslySetInnerHTML={{__html: this.props.notes}}></p>:'N/A'}
+                        </div>
+                        <div className="col-sm">
                             <p className="title p-0 m-0">NCSA</p>
-                            { this.props.primary_position_video!==null ? <a href={this.props.primary_position_video} target="_blank"><img src={require('../images/thumbnail-video.jpg')} alt="Video" /></a>:''}
+                            { this.props.primary_position_video!==null ? <a href={this.props.primary_position_video} target="_blank" rel="noopener noreferrer"><img src={require('../images/thumbnail-video.jpg')} alt="Video" /></a>:''}
                             { this.props.ncsa!==null&&this.props.ncsa!=="" ? <a href={this.props.ncsa.includes("//") ? this.props.ncsa:`//${this.props.ncsa}`} target="_blank" rel="noopener noreferrer">NCSA Profile</a>:'N/A' }
                         </div>
-
                     </div>
                 </div>
                 </li>
