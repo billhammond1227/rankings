@@ -160,8 +160,9 @@ class Filters extends Component {
                     <select className="form-control" id="sort" onChange={this.handleSubmit}>
                         <option value=""></option>
                         <option value="name">Player Name</option>
-                        <option value="primary">Primary</option>
-                        <option value="secondary">Secondary</option>
+                        {/* <option value="primary">Primary Velo</option>
+                        <option value="secondary">Secondary Velo</option> */}
+                        <option value="velocity">Velocity</option>
                         <option value="hitting">Hitting</option>
                         <option value="state">State</option>
                         <option value="gradyear">Grad Year</option>
