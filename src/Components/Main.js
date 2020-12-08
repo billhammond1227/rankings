@@ -15,8 +15,8 @@ class Main extends Component {
     render(){
         return <div className="container-fluid pl-0 pr-0 showcase">
                 <Header/>
-                <Filters {...this.props} />
                 <Key/>
+                <Filters {...this.props} />
                 <Players {...this.props} />
             </div>
     }

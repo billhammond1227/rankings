@@ -59,7 +59,7 @@ class Filters extends Component {
             <div className="row">
                 <div className="col-sm">
                     <label className="vis-hide">All</label>
-                    <button type="button" className="form-control" onClick={this.resetForm}>All</button>
+                    <button type="button" className="form-control" onClick={this.resetForm}>Reset Filters</button>
                 </div>
                 {/* POSITION */}
                 <div className="col-sm form-group">

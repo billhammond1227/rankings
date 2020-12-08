@@ -16,13 +16,17 @@ class Players extends Component {
                     <ul className="list-group text-center">
                     <li className="list-group-item titles">
                         <div className="row">
-                            <div className="col">Player</div>
+                            <div className="col-2">Player</div>
                             <div className="col">Primary</div>
+                            <div className="col">Velocity</div>
                             <div className="col">Secondary</div>
-                            <div className="col">Hitting</div>
+                            <div className="col">Velocity</div>
+                            <div className="col">Bats/Throws</div>
+                            <div className="col">Exit Velo</div>
                             <div className="col">State</div>
                             <div className="col">Grad Year</div>
-                            <div className="col-1">&nbsp;</div>
+                            <div className="col">NCSA</div>
+                            <div className="col">Video</div>
                         </div>
                     </li>
                     {  
