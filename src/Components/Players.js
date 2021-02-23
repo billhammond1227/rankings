@@ -16,17 +16,17 @@ class Players extends Component {
                     <ul className="list-group text-center">
                     <li className="list-group-item titles">
                         <div className="row">
-                            <div className="col-2">Player</div>
-                            <div className="col">Primary</div>
-                            <div className="col">Velocity</div>
-                            <div className="col">Secondary</div>
-                            <div className="col">Velocity</div>
-                            <div className="col">Bats/Throws</div>
-                            <div className="col">Exit Velo</div>
-                            <div className="col">State</div>
-                            <div className="col">Grad Year</div>
-                            <div className="col">NCSA</div>
-                            <div className="col">Video</div>
+                            <div className="col-sm-2">Player</div>
+                            <div className="col-sm d-none d-sm-none d-md-block">Primary</div>
+                            <div className="col-sm d-none d-sm-none d-md-block">Velocity</div>
+                            <div className="col-sm d-none d-sm-none d-md-block">Secondary</div>
+                            <div className="col-sm d-none d-sm-none d-md-block">Velocity</div>
+                            <div className="col-sm d-none d-sm-none d-md-block">Bats/Throws</div>
+                            <div className="col-sm d-none d-sm-none d-md-block">Exit Velo</div>
+                            <div className="col-sm d-none d-sm-none d-md-block">State</div>
+                            <div className="col-sm d-none d-sm-none d-md-block">Grad Year</div>
+                            <div className="col-sm d-none d-sm-none d-md-block">NCSA</div>
+                            <div className="col-sm d-none d-sm-none d-md-block">Video</div>
                         </div>
                     </li>
                     {  
