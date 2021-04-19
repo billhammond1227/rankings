@@ -17,7 +17,7 @@ class Player extends Component {
                     <div className="col-sm"><span class="d-block d-sm-block d-md-none">Bats/Throws:&nbsp;</span>{ this.props.bats.charAt(0) } / { this.props.throws.charAt(0) }</div>
                     <div className="col-sm mb-2"><span class="d-block d-sm-block d-md-none">Exit Velo:&nbsp;</span>{this.props.exit_velo!==null&&this.props.exit_velo!==""&&this.props.exit_velo>0 ? `${this.props.exit_velo} MPH`:'N/A'}</div>
                     <div className="col-sm mb-2"><span class="d-block d-sm-block d-md-none">ST:&nbsp;</span>{ this.props.state }</div>
-                    <div className="col-sm mb-2"><span class="d-block d-sm-block d-md-none">Grad Year:&nbsp;</span>{ this.props.grad_year }</div>
+                    <div className="col-sm mb-2">HS: {this.props.high_school!=="" ? this.props.high_school:''}<br/><span class="d-block d-sm-block d-md-none">Grad Year:&nbsp;</span>{ this.props.grad_year }</div>
                     <div className="col-sm mb-2"><span class="d-block d-sm-block d-md-none">NCSA:&nbsp;</span>{ this.props.ncsa!==null&&this.props.ncsa!=="" ? <a href={this.props.ncsa.includes("//") ? this.props.ncsa:`//${this.props.ncsa}`} target="_blank" rel="noopener noreferrer">NCSA Profile</a>:'N/A' }</div>
                     <div className="col-sm mb-2"><span class="d-block d-sm-block d-md-none">Video:&nbsp;</span>{ this.props.primary_position_video!==null&&this.props.primary_position_video!=="" ? <a href={this.props.primary_position_video.includes("//") ? this.props.primary_position_video:`//this.props.primary_position_video}`} target="_blank" rel="noopener noreferrer">Click Here</a>:'N/A' }</div>
                     {/* <div className="col-1">
