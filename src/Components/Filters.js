@@ -162,11 +162,17 @@ class Filters extends Component {
                         <option value=""></option>
                         <option value="name">Player Name</option>
                         {/* <option value="primary">Primary Velo</option>
-                        <option value="secondary">Secondary Velo</option> */}
+                        <option value="secondary">Secondary Velo</option> 
                         <option value="velocity">Velocity</option>
+                        */}
                         <option value="hitting">Hitting</option>
                         <option value="state">State</option>
                         <option value="gradyear">Grad Year</option>
+                        <option value="dashtime">60 Time</option>
+                        <option value="fbtime">Top FB Time</option>
+                        <option value="infieldvelo">Infield Velo</option>
+                        <option value="outfieldvelo">Outfield Velo</option>
+                        <option value="exitvelo">Exit Velo</option>
                     </select>
                 </div>
             </div>

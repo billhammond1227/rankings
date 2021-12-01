@@ -17,16 +17,16 @@ class Players extends Component {
                     <li className="list-group-item titles">
                         <div className="row">
                             <div className="col-sm-2">Player</div>
-                            <div className="col-sm d-none d-sm-none d-md-block">Primary</div>
-                            <div className="col-sm d-none d-sm-none d-md-block">Velocity</div>
-                            <div className="col-sm d-none d-sm-none d-md-block">Secondary</div>
-                            <div className="col-sm d-none d-sm-none d-md-block">Velocity</div>
+                            <div className="col-sm d-none d-sm-none d-md-block">State</div>
+                            <div className="col-sm d-none d-sm-none d-md-block">PP/SP</div>
+                            <div className="col-sm d-none d-sm-none d-md-block">60 Time</div>
+                            <div className="col-sm d-none d-sm-none d-md-block">Top FB Time</div>
+                            <div className="col-sm d-none d-sm-none d-md-block">Infield Velo</div>
+                            <div className="col-sm d-none d-sm-none d-md-block">Outfield Velo</div>
                             <div className="col-sm d-none d-sm-none d-md-block">Bats/Throws</div>
                             <div className="col-sm d-none d-sm-none d-md-block">Exit Velo</div>
-                            <div className="col-sm d-none d-sm-none d-md-block">State</div>
                             <div className="col-sm d-none d-sm-none d-md-block">Grad Year</div>
-                            <div className="col-sm d-none d-sm-none d-md-block">NCSA</div>
-                            <div className="col-sm d-none d-sm-none d-md-block">Video</div>
+                            <div className="col-sm d-none d-sm-none d-md-block">Twitter</div>
                         </div>
                     </li>
                     {  
