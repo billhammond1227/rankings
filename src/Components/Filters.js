@@ -169,7 +169,7 @@ class Filters extends Component {
                         <option value="state">State</option>
                         <option value="gradyear">Grad Year</option>
                         <option value="dashtime">60 Time</option>
-                        <option value="fbtime">Top FB Time</option>
+                        <option value="fbtime">Top FB Velo</option>
                         <option value="infieldvelo">Infield Velo</option>
                         <option value="outfieldvelo">Outfield Velo</option>
                         <option value="exitvelo">Exit Velo</option>

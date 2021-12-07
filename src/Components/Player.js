@@ -10,13 +10,13 @@ class Player extends Component {
                     <div className="col-sm mb-2"><span class="d-block d-sm-block d-md-none">ST:&nbsp;</span>{ this.props.state }</div>
                     <div className="col-sm mb-2">{ this.props.primary_position }/{ this.props.secondary_position }</div>
                     <div className="col-sm"><span class="d-block d-sm-block d-md-none">60 Time:&nbsp;</span>{this.props.dash_time!==null&&this.props.dash_time!==""&&this.props.dash_time>0 ? `${this.props.dash_time}`:'N/A'}</div>
-                    <div className="col-sm"><span class="d-block d-sm-block d-md-none">FB Time:&nbsp;</span>{this.props.fb_time!==null&&this.props.fb_time!==""&&this.props.tb_time>0 ? `${this.props.fb_time}`:'N/A'}</div>
+                    <div className="col-sm"><span class="d-block d-sm-block d-md-none">FB Velo:&nbsp;</span>{this.props.fb_velo!==null&&this.props.fb_velo!==""&&this.props.tb_time>0 ? `${this.props.fb_velo}`:'N/A'}</div>
                     <div className="col-sm mb-2"><span class="d-block d-sm-block d-md-none">INF Velo:&nbsp;</span>{this.props.infield_velo!==null&&this.props.infield_velo!==""&&this.props.infield_velo>0 ? `${this.props.infield_velo} MPH`:'N/A'}</div>
                     <div className="col-sm mb-2"><span class="d-block d-sm-block d-md-none">OF Velo:&nbsp;</span>{this.props.outfield_velo!==null&&this.props.outfield_velo!==""&&this.props.outfield_velo>0 ? `${this.props.outfield_velo} MPH`:'N/A'}</div>
                     <div className="col-sm"><span class="d-block d-sm-block d-md-none">Bats/Throws:&nbsp;</span>{ this.props.bats.charAt(0) } / { this.props.throws.charAt(0) }</div>
                     <div className="col-sm mb-2"><span class="d-block d-sm-block d-md-none">Exit Velo:&nbsp;</span>{this.props.exit_velo!==null&&this.props.exit_velo!==""&&this.props.exit_velo>0 ? `${this.props.exit_velo} MPH`:'N/A'}</div>
                     <div className="col-sm mb-2"><span class="d-block d-sm-block d-md-none">Grad Year:&nbsp;</span>{ this.props.grad_year }</div>
-                    <div className="col-sm mb-2"><span class="d-block d-sm-block d-md-none">Twitter:&nbsp;</span>{ this.props.twitter!==null&&this.props.twitter!=="" ? <a href={this.props.twitter.includes("//") ? this.props.twitter:`//${this.props.twitter}`} target="_blank" rel="noopener noreferrer">Click Here</a>:'N/A' }</div>
+                    <div className="col-sm mb-2"><span class="d-block d-sm-block d-md-none">Twitter:&nbsp;</span>{ this.props.twitter_account!==null&&this.props.twitter_account!=="" ? <a href={this.props.twitter_account.includes("//") ? this.props.twitter_account:`//${this.props.twitter_account}`} target="_blank" rel="noopener noreferrer">Click Here</a>:'N/A' }</div>
                 </div>
                 </li>
                 

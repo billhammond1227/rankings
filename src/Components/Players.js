@@ -20,7 +20,7 @@ class Players extends Component {
                             <div className="col-sm d-none d-sm-none d-md-block">State</div>
                             <div className="col-sm d-none d-sm-none d-md-block">PP/SP</div>
                             <div className="col-sm d-none d-sm-none d-md-block">60 Time</div>
-                            <div className="col-sm d-none d-sm-none d-md-block">Top FB Time</div>
+                            <div className="col-sm d-none d-sm-none d-md-block">Top FB Velo</div>
                             <div className="col-sm d-none d-sm-none d-md-block">Infield Velo</div>
                             <div className="col-sm d-none d-sm-none d-md-block">Outfield Velo</div>
                             <div className="col-sm d-none d-sm-none d-md-block">Bats/Throws</div>
