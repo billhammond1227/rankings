@@ -5,7 +5,7 @@ class Player extends Component {
         return <li className="list-group-item player" data-toggle="collapse" data-target={`#more-info-${this.props.plid}`} aria-expanded="false" aria-controls="collapseExample">
                 <div className="row">
                     <div className="col-sm-2 player-name mb-2"><span class="d-block d-sm-block d-md-none">Player:&nbsp;</span>{ this.props.primary_position_status==="yes" ? <svg className="bi bi-person-check-fill check mr-2" width="1.5em" height="1.5em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm9.854-2.854a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/></svg>:"" }
-                    { this.props.ncsa!==null&&this.props.ncsa!=="" ? <a href={this.props.ncsa.includes("//") ? this.props.ncsa:`//${this.props.ncsa}`} target="_blank" rel="noopener noreferrer">${this.props.first_name} ${this.props.last_name}</a>:`${this.props.first_name} ${this.props.last_name}` }
+                    { this.props.ncsa!==null&&this.props.ncsa!=="" ? <a href={this.props.ncsa.includes("//") ? this.props.ncsa:`//${this.props.ncsa}`} target="_blank" rel="noopener noreferrer">{this.props.first_name} {this.props.last_name}</a>:`${this.props.first_name} ${this.props.last_name}` }
                     </div>
                     <div className="col-sm mb-2"><span class="d-block d-sm-block d-md-none">ST:&nbsp;</span>{ this.props.state }</div>
                     <div className="col-sm mb-2">{ this.props.primary_position }/{ this.props.secondary_position }</div>
